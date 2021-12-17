@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import DropDown from './components/DropDown';
 
 function App() {
+
+  const onSelect = (index) => {
+    console.log(index);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <DropDown items={[['Item 1', 'Small Text 1'], ['Item 2', ''], ['Item 3', 'Small Text 3']]} direction="ltr" onSelect={onSelect} />
+    </>
   );
 }
 

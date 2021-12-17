@@ -1,0 +1,50 @@
+.dropDown {
+    border: 1px solid #DDD;
+    padding: 10px;
+}
+
+.representPortion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrowDown {
+    display: inline-block;
+    border-top: 4px solid #000;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.subDropDown {
+    border-top: 1px solid #DDD;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.subDropDown div {
+    margin: 10px 0;
+}
+
+.subDropDown div:first-child {
+    margin-top: 0;
+}
+
+.subDropDown div:last-child {
+    margin-bottom: 0;
+}
+
+.subDropDown div {
+    cursor: pointer;
+    transition: ease-in-out 100ms;
+}
+
+.subDropDown div:hover {
+    opacity: .6;
+}
+
+.subDropDown div p:last-child {
+    font-size: 11px;
+}
